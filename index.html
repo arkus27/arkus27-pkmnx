@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pokémon X</title>
+    <style>
+      /* Estilos CSS */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #0034ee;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 32px;
+        margin: 0;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Pokémon X</h1>
+    </header>
+
+    <main>
+      <h2>Descripción del juego</h2>
+      <p>
+        Pokémon X es un videojuego de rol desarrollado por Game Freak y
+        publicado por Nintendo para la consola Nintendo 3DS. El juego se
+        desarrolla en la región de Kalos y presenta una nueva generación de
+        Pokémon para capturar y entrenar. Los jugadores deben convertirse en el
+        Campeón de la Liga Pokémon mientras exploran el mundo y descubren los
+        secretos de los Pokémon legendarios.
+      </p>
+
+      <h2>Características principales</h2>
+      <ul>
+        <li>Gráficos en 3D mejorados</li>
+        <img src="pokemon-x-image3.jpg" alt="Imagen del juego Pokémon X" />
+        <li>Nuevos Pokémon y Megaevoluciones</li>
+        <li>
+          Nuevas mecánicas de juego, como el movimiento de patineta y el vuelo
+          en ciertas áreas
+        </li>
+        <li>
+          Batallas en línea y características de interacción con otros jugadores
+        </li>
+      </ul>
+
+      <h2>Imágenes del juego</h2>
+      <img src="pokemon-x-image1.jpg" alt="Imagen del juego Pokémon X" />
+      <img src="pokemon-x-image2.jpg" alt="Imagen del juego Pokémon X" />
+
+      <h2>Requisitos del sistema</h2>
+      <p>Para jugar Pokémon X en la consola Nintendo 3DS, se requiere:</p>
+      <ul>
+        <li>Consola Nintendo 3DS o Nintendo 2DS</li>
+        <li>Cartucho del juego Pokémon X</li>
+      </ul>
+
+      <h2>Información adicional</h2>
+      <button onclick="toggleAdditionalInfo()">
+        Mostrar/ocultar información adicional
+      </button>
+      <div id="additional-info" class="hidden">
+        <p>
+          Aquí puedes encontrar más información sobre los eventos especiales,
+          contenido descargable y actualizaciones del juego Pokémon X.
+        </p>
+      </div>
+
+      <h2>Contacto</h2>
+      <form>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>Un abrazote .</p>
+    </footer>
+
+    <script>
+      // JavaScript para mostrar/ocultar información adicional
+      function toggleAdditionalInfo() {
+        const additionalInfo = document.getElementById("additional-info");
+        additionalInfo.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>
